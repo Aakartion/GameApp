@@ -1,13 +1,13 @@
-import Alert from "./components/Alert";
+import Button from "./components/Button";
 
 function App() {
   const message = "Alert";
+  const clicked = () => {
+    console.log("Button is clicked");
+  };
   return (
     <div>
-      <Alert>
-        <p>{message}</p>
-        <span>Alert message</span>
-      </Alert>
+      <Button button="Button" whenButtonIsClicked={clicked} />
     </div>
   );
 }
